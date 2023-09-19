@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className='p-10'>
-      <UserButton afterSignOutUrl="/" />
+      Hello World
     </main>
   );
 }
