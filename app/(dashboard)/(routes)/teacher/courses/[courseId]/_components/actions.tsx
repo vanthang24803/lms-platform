@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 interface ActionsProps {
   disabled: boolean;
@@ -18,7 +19,9 @@ export const Actions = ({ disabled, courseId, isPublished }: ActionsProps) => {
 
   const onClick = async () => {};
 
-  const onDelete = async () => {};
+  const onDelete = async () => {
+    toast.success("Deleted Success!")
+  };
 
   return (
     <div className="flex items-center gap-x-2">
